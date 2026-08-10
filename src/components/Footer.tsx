@@ -48,8 +48,26 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 pt-8 text-xs text-white/30 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-4 pt-8 text-xs text-white/30 sm:flex-row sm:items-center sm:justify-between">
           <span>© {year} AZ Consulting &amp; Trade. Tutti i diritti riservati.</span>
+
+          <div className="flex items-center gap-5">
+            <a
+              href="https://www.iubenda.com/privacy-policy/31362546"
+              className="iubenda-white iubenda-noiframe iubenda-embed text-xs text-white/50 transition-colors hover:text-white"
+              title="Privacy Policy"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://www.iubenda.com/privacy-policy/31362546/cookie-policy"
+              className="iubenda-white iubenda-noiframe iubenda-embed text-xs text-white/50 transition-colors hover:text-white"
+              title="Cookie Policy"
+            >
+              Cookie Policy
+            </a>
+          </div>
+
           <span>Engineering · Automation · Trade</span>
         </div>
       </Container>

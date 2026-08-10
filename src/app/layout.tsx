@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -49,6 +50,24 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-bg text-ink">
         {children}
+
+        {/* Iubenda cookie banner (Privacy Controls and Cookie Solution) */}
+        <Script
+          id="iubenda-cs"
+          src="https://embeds.iubenda.com/widgets/4b5dfbe4-0a7b-4fc5-9918-fc6b8d0cdedd.js"
+          strategy="afterInteractive"
+        />
+
+        {/*
+          Iubenda's embed loader: styles/opens the Privacy Policy and
+          Cookie Policy links (.iubenda-embed) rendered in the footer.
+          Loaded once here so it isn't duplicated across components.
+        */}
+        <Script
+          id="iubenda-embed-loader"
+          src="https://cdn.iubenda.com/iubenda.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
