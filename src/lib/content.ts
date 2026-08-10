@@ -114,10 +114,10 @@ export const whyAz = [
 ];
 
 export const contact = {
-  email: "info@azconsultingtrade.it",
-  phone: "+39 000 000 0000",
+  email: "andrea@azconsultingtrade.it",
+  phone: "+39 392 135 7797",
   location: "Italia",
-  vat: "IT00000000000",
+  vat: "IT05567410260",
   linkedin: "https://www.linkedin.com/company/az-consulting-trade",
 };
 
