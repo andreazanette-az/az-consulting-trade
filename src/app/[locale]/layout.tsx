@@ -7,6 +7,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import IubendaConfig from "@/components/IubendaConfig";
+import { IUBENDA_BANNER_POSITION } from "@/lib/iubenda";
 import "../globals.css";
 
 const inter = Inter({
@@ -85,15 +86,16 @@ export default async function LocaleLayout({ children, params }: Props) {
           {/*
             Pins Iubenda's banner language to our current locale instead
             of letting it auto-detect from <html lang> (see IubendaConfig
-            for why: that auto-detection re-triggers the banner when the
-            locale switch updates the lang attribute without a reload).
-            Must run before the widget script below.
+            for why), and forces the banner to float bottom-center instead
+            of Iubenda's default top placement, which rendered on top of
+            our fixed header navigation. Must run before the widget script
+            below.
           */}
           <script
             dangerouslySetInnerHTML={{
               __html: `window._iub=window._iub||[];window._iub.csConfiguration={lang:${JSON.stringify(
                 locale
-              )}};`,
+              )},banner:{position:${JSON.stringify(IUBENDA_BANNER_POSITION)}}};`,
             }}
           />
           <IubendaConfig />

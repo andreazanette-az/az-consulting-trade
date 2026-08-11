@@ -88,3 +88,15 @@ body {
 .text-balance {
   text-wrap: balance;
 }
+
+/*
+  Safety net independent of the _iub.csConfiguration.banner.position
+  setting (see IubendaConfig): forces Iubenda's cookie banner to the
+  bottom of the viewport no matter what, since its default top/float
+  placement was rendering on top of our fixed header navigation. Inert
+  if the banner isn't present.
+*/
+#iubenda-cs-banner {
+  top: auto !important;
+  bottom: 0 !important;
+}

@@ -2,8 +2,13 @@
 
 import { useEffect } from "react";
 import { useLocale } from "next-intl";
+import { IUBENDA_BANNER_POSITION } from "@/lib/iubenda";
 
-type IubCsConfiguration = { lang?: string; [key: string]: unknown };
+type IubCsConfiguration = {
+  lang?: string;
+  banner?: { position?: string; [key: string]: unknown };
+  [key: string]: unknown;
+};
 
 declare global {
   interface Window {
@@ -25,7 +30,14 @@ export default function IubendaConfig() {
 
   useEffect(() => {
     const iub = window._iub || ([] as unknown as NonNullable<Window["_iub"]>);
-    iub.csConfiguration = { ...iub.csConfiguration, lang: locale };
+    iub.csConfiguration = {
+      ...iub.csConfiguration,
+      lang: locale,
+      banner: {
+        ...iub.csConfiguration?.banner,
+        position: IUBENDA_BANNER_POSITION,
+      },
+    };
     window._iub = iub;
   }, [locale]);
 
