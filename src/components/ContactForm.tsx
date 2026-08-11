@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type ChangeEvent, type FormEvent } from "react";
+import { useTranslations } from "next-intl";
 import { formspreeEndpoint } from "@/lib/content";
 
 type Status = "idle" | "submitting" | "success" | "error";
@@ -21,30 +22,31 @@ const initialFields: Fields = { name: "", email: "", message: "", _gotcha: "" };
 const fieldClass =
   "w-full border-b border-white/20 bg-transparent py-3 text-sm text-white placeholder:text-white/35 outline-none transition-colors focus:border-accent";
 
-function validate(fields: Fields): Errors {
-  const errors: Errors = {};
-
-  if (!fields.name.trim()) {
-    errors.name = "Inserisci il tuo nome.";
-  }
-
-  if (!fields.email.trim()) {
-    errors.email = "Inserisci un indirizzo email.";
-  } else if (!EMAIL_RE.test(fields.email.trim())) {
-    errors.email = "Inserisci un indirizzo email valido.";
-  }
-
-  if (!fields.message.trim()) {
-    errors.message = "Raccontaci brevemente la tua esigenza.";
-  }
-
-  return errors;
-}
-
 export default function ContactForm() {
+  const t = useTranslations("contactForm");
   const [fields, setFields] = useState<Fields>(initialFields);
   const [errors, setErrors] = useState<Errors>({});
   const [status, setStatus] = useState<Status>("idle");
+
+  function validate(values: Fields): Errors {
+    const validationErrors: Errors = {};
+
+    if (!values.name.trim()) {
+      validationErrors.name = t("errors.name");
+    }
+
+    if (!values.email.trim()) {
+      validationErrors.email = t("errors.emailRequired");
+    } else if (!EMAIL_RE.test(values.email.trim())) {
+      validationErrors.email = t("errors.emailInvalid");
+    }
+
+    if (!values.message.trim()) {
+      validationErrors.message = t("errors.message");
+    }
+
+    return validationErrors;
+  }
 
   function handleChange(
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -101,11 +103,9 @@ export default function ContactForm() {
     return (
       <div className="border border-white/15 p-8">
         <p className="text-sm font-medium uppercase tracking-[0.14em] text-accent">
-          Messaggio inviato
+          {t("successTitle")}
         </p>
-        <p className="mt-3 text-white/70">
-          Grazie per averci contattato. Ti risponderemo il prima possibile.
-        </p>
+        <p className="mt-3 text-white/70">{t("successBody")}</p>
       </div>
     );
   }
@@ -114,18 +114,18 @@ export default function ContactForm() {
     <form
       onSubmit={handleSubmit}
       className="border border-white/15 p-8"
-      aria-label="Modulo di contatto"
+      aria-label={t("ariaLabel")}
       noValidate
     >
       <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/50">
-        Scrivici
+        {t("heading")}
       </p>
 
       <div className="mt-6 space-y-6">
         {/* Honeypot field: hidden from sighted users and screen readers,
             bots that auto-fill every input will trip it. */}
         <div className="absolute left-[-9999px] top-auto h-0 w-0 overflow-hidden">
-          <label htmlFor="_gotcha">Non compilare questo campo</label>
+          <label htmlFor="_gotcha">{t("honeypotLabel")}</label>
           <input
             id="_gotcha"
             name="_gotcha"
@@ -139,13 +139,13 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="name" className="sr-only">
-            Nome
+            {t("namePlaceholder")}
           </label>
           <input
             id="name"
             name="name"
             type="text"
-            placeholder="Nome e cognome"
+            placeholder={t("namePlaceholder")}
             className={fieldClass}
             value={fields.name}
             onChange={handleChange}
@@ -161,13 +161,13 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="email" className="sr-only">
-            Email
+            {t("emailPlaceholder")}
           </label>
           <input
             id="email"
             name="email"
             type="email"
-            placeholder="Email aziendale"
+            placeholder={t("emailPlaceholder")}
             className={fieldClass}
             value={fields.email}
             onChange={handleChange}
@@ -183,13 +183,13 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="message" className="sr-only">
-            Messaggio
+            {t("messagePlaceholder")}
           </label>
           <textarea
             id="message"
             name="message"
             rows={4}
-            placeholder="Raccontaci il tuo progetto"
+            placeholder={t("messagePlaceholder")}
             className={`${fieldClass} resize-none`}
             value={fields.message}
             onChange={handleChange}
@@ -209,9 +209,7 @@ export default function ContactForm() {
         disabled={status === "submitting"}
         className="group mt-8 inline-flex w-full items-center justify-center gap-2.5 bg-white px-6 py-3.5 text-sm font-medium tracking-wide text-black transition-colors duration-300 hover:bg-accent disabled:opacity-60"
       >
-        <span>
-          {status === "submitting" ? "Invio in corso…" : "Invia messaggio"}
-        </span>
+        <span>{status === "submitting" ? t("submitting") : t("submit")}</span>
         {status !== "submitting" && (
           <svg
             viewBox="0 0 16 16"
@@ -231,10 +229,7 @@ export default function ContactForm() {
       </button>
 
       {status === "error" && (
-        <p className="mt-4 text-sm text-white/60">
-          Non è stato possibile inviare il messaggio. Riprova oppure scrivici
-          direttamente via email.
-        </p>
+        <p className="mt-4 text-sm text-white/60">{t("errorBody")}</p>
       )}
     </form>
   );

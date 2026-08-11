@@ -1,17 +1,22 @@
+import { useTranslations } from "next-intl";
 import Container from "./ui/Container";
 import Reveal from "./ui/Reveal";
 import GrowLine from "./ui/GrowLine";
-import { whyAz } from "@/lib/content";
+
+type WhyAzItem = { number: string; title: string; text: string };
 
 export default function WhyAZ() {
+  const t = useTranslations("whyAz");
+  const items = t.raw("items") as WhyAzItem[];
+
   return (
     <section className="py-24 sm:py-32">
       <Container>
         <Reveal>
           <h2 className="max-w-3xl font-display text-[clamp(2rem,4vw,3.5rem)] font-medium leading-[1.08] tracking-[-0.01em] text-ink text-balance">
-            Un approccio tecnico.
+            {t("titleLine1")}
             <br />
-            Un unico interlocutore.
+            {t("titleLine2")}
           </h2>
         </Reveal>
 
@@ -20,7 +25,7 @@ export default function WhyAZ() {
             <GrowLine />
           </Reveal>
           <div className="grid grid-cols-1 gap-10 py-0 sm:grid-cols-3 sm:gap-8">
-            {whyAz.map((item, index) => (
+            {items.map((item, index) => (
               <Reveal key={item.number} delay={index * 100}>
                 <div className="pt-10">
                   <span className="font-display text-3xl font-medium text-gray-light sm:text-4xl">

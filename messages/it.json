@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "AZ Consulting & Trade | Engineering, Automation & Die Casting",
+    "description": "AZ Consulting & Trade offre consulenza, progettazione, installazione e manutenzione per pressofusione, automazione industriale e robotica, oltre alla fornitura diretta di soluzioni industriali.",
+    "ogDescription": "Consulenza tecnica, progettazione, installazione, manutenzione e fornitura diretta per pressofusione, automazione e robotica industriale.",
+    "keywords": "consulenza industriale, pressofusione, automazione industriale, robotica industriale, engineering, die casting, impianti industriali"
+  },
+  "nav": {
+    "servizi": "Servizi",
+    "metodo": "Metodo",
+    "contatti": "Contatti",
+    "cta": "Parliamo del tuo progetto",
+    "homeAriaLabel": "AZ Consulting & Trade — home",
+    "mainAriaLabel": "Navigazione principale",
+    "mobileAriaLabel": "Navigazione mobile",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu"
+  },
+  "hero": {
+    "eyebrow": "Engineering · Automation · Die Casting",
+    "verticalTag": "Consulting — Engineering — Trade",
+    "seoH1": "Soluzioni industriali per pressofusione, automazione e robotica",
+    "titleLine1": "Soluzioni industriali.",
+    "titleLine2": "Dalla progettazione",
+    "titleLine3": "alla produzione.",
+    "paragraph1": "AZ Consulting & Trade affianca le aziende nella progettazione, installazione e manutenzione di impianti industriali, sistemi di automazione e soluzioni per la pressofusione.",
+    "paragraph2": "Dalla consulenza tecnica alla fornitura diretta, sviluppiamo soluzioni pensate per migliorare efficienza, affidabilità e produttività.",
+    "ctaPrimary": "Scopri i nostri servizi",
+    "ctaSecondary": "Parliamo del tuo progetto",
+    "imageAlt": "Impianto industriale con bracci robotici e linea automatica",
+    "imageLabel": "Impianto industriale · linea automatizzata"
+  },
+  "intro": {
+    "kicker": "AZ Consulting & Trade",
+    "headlineLine1": "Non vendiamo semplicemente tecnologia.",
+    "headlineLine2": "Costruiamo soluzioni che funzionano.",
+    "body1": "Ogni impianto industriale presenta esigenze specifiche.",
+    "body2": "Per questo partiamo dall'analisi del processo produttivo, individuiamo le criticità e sviluppiamo soluzioni tecniche in grado di integrarsi realmente nella produzione del cliente.",
+    "body3": "Un unico interlocutore per consulenza, progettazione, installazione, manutenzione e fornitura."
+  },
+  "services": {
+    "eyebrow": "Servizi",
+    "sectionTitle": "Competenze industriali a 360°",
+    "sectionSubtitle": "Dall'analisi iniziale alla messa in produzione, accompagniamo il cliente durante l'intero ciclo di vita dell'impianto.",
+    "items": [
+      {
+        "number": "01",
+        "tag": "PRESSOFUSIONE",
+        "title": "Soluzioni per la pressofusione",
+        "text": "Supportiamo le aziende nell'ottimizzazione dei processi di pressofusione, nella scelta delle tecnologie e nell'integrazione degli impianti all'interno delle linee produttive.",
+        "items": [
+          "Analisi del processo",
+          "Progettazione e ottimizzazione",
+          "Integrazione impianti",
+          "Supporto tecnico",
+          "Manutenzione",
+          "Fornitura di macchinari e componenti"
+        ]
+      },
+      {
+        "number": "02",
+        "tag": "AUTOMAZIONE INDUSTRIALE",
+        "title": "Automazione dei processi produttivi",
+        "text": "Progettiamo e integriamo soluzioni di automazione pensate per aumentare produttività, precisione e continuità operativa.",
+        "items": [
+          "Linee automatiche",
+          "Sistemi di movimentazione",
+          "Integrazione PLC",
+          "Celle automatizzate",
+          "Retrofit",
+          "Ottimizzazione dei processi"
+        ]
+      },
+      {
+        "number": "03",
+        "tag": "ROBOTICA",
+        "title": "Robotica integrata nella produzione",
+        "text": "Integriamo robot industriali e sistemi automatizzati all'interno dei processi produttivi, sviluppando soluzioni personalizzate in funzione delle esigenze dello stabilimento.",
+        "items": [
+          "Celle robotizzate",
+          "Manipolazione",
+          "Asservimento macchine",
+          "Automazione di fine linea",
+          "Integrazione robot",
+          "Commissioning"
+        ]
+      },
+      {
+        "number": "04",
+        "tag": "CONSULENZA TECNICA",
+        "title": "Engineering & Industrial Consulting",
+        "text": "Affianchiamo il cliente nelle decisioni tecniche e strategiche legate agli impianti produttivi. Dall'analisi iniziale fino alla realizzazione, coordiniamo tecnologie, fornitori e attività operative.",
+        "items": [
+          "Progettazione",
+          "Studi di fattibilità",
+          "Supervisione installazioni",
+          "Project management",
+          "Manutenzione",
+          "Assistenza tecnica"
+        ]
+      }
+    ]
+  },
+  "trade": {
+    "eyebrow": "Industrial Trade",
+    "titleLine1": "La tecnologia giusta.",
+    "titleLine2": "Direttamente dove serve.",
+    "body1": "Grazie alla conoscenza del mercato e a una rete consolidata di partner e produttori, AZ Consulting & Trade può fornire direttamente macchinari, componenti e soluzioni destinate all'industria.",
+    "body2": "Il nostro valore non è semplicemente trovare un prodotto, ma individuare la soluzione tecnicamente più adatta al processo produttivo del cliente.",
+    "cta": "Richiedi una consulenza",
+    "imageAlt": "Macchinario industriale pronto per la fornitura",
+    "imageLabel": "Fornitura diretta · macchinari industriali"
+  },
+  "method": {
+    "eyebrow": "Metodo",
+    "title": "Dall'idea alla produzione.",
+    "steps": [
+      { "number": "01", "title": "Analisi", "text": "Analizziamo processo, impianto e obiettivi produttivi." },
+      { "number": "02", "title": "Progettazione", "text": "Definiamo la soluzione tecnica più efficace." },
+      { "number": "03", "title": "Integrazione", "text": "Coordiniamo tecnologie, impianti e automazione." },
+      { "number": "04", "title": "Installazione", "text": "Seguiamo installazione, commissioning e messa in servizio." },
+      { "number": "05", "title": "Supporto", "text": "Garantiamo assistenza tecnica e manutenzione nel tempo." }
+    ]
+  },
+  "whyAz": {
+    "titleLine1": "Un approccio tecnico.",
+    "titleLine2": "Un unico interlocutore.",
+    "items": [
+      { "number": "01", "title": "Esperienza sul campo", "text": "Conosciamo le esigenze reali della produzione industriale e lavoriamo con un approccio operativo." },
+      { "number": "02", "title": "Soluzioni su misura", "text": "Ogni progetto viene sviluppato sulle specifiche esigenze tecniche e produttive del cliente." },
+      { "number": "03", "title": "Dalla consulenza alla fornitura", "text": "Possiamo seguire l'intero progetto: analisi, progettazione, fornitura, installazione e manutenzione." }
+    ]
+  },
+  "finalCta": {
+    "kicker": "Hai un progetto industriale?",
+    "title": "Parliamo della prossima evoluzione della tua produzione.",
+    "body": "Raccontaci la tua esigenza. Studieremo insieme la soluzione tecnica più adatta.",
+    "location": "Italia"
+  },
+  "contactForm": {
+    "heading": "Scrivici",
+    "ariaLabel": "Modulo di contatto",
+    "namePlaceholder": "Nome e cognome",
+    "emailPlaceholder": "Email aziendale",
+    "messagePlaceholder": "Raccontaci il tuo progetto",
+    "honeypotLabel": "Non compilare questo campo",
+    "submit": "Invia messaggio",
+    "submitting": "Invio in corso…",
+    "successTitle": "Messaggio inviato",
+    "successBody": "Grazie per averci contattato. Ti risponderemo il prima possibile.",
+    "errorBody": "Non è stato possibile inviare il messaggio. Riprova oppure scrivici direttamente via email.",
+    "errors": {
+      "name": "Inserisci il tuo nome.",
+      "emailRequired": "Inserisci un indirizzo email.",
+      "emailInvalid": "Inserisci un indirizzo email valido.",
+      "message": "Raccontaci brevemente la tua esigenza."
+    }
+  },
+  "footer": {
+    "description": "Consulenza tecnica, progettazione, automazione e fornitura diretta per l'industria.",
+    "linkedin": "LinkedIn",
+    "vatLabel": "P.IVA",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "copyright": "© {year} AZ Consulting & Trade. Tutti i diritti riservati.",
+    "tagline": "Engineering · Automation · Trade",
+    "links": {
+      "diecasting": "Presse e pressofusione",
+      "automation": "Automazione",
+      "robotics": "Robotica",
+      "consulting": "Consulting",
+      "trade": "Trade",
+      "contact": "Contatti"
+    }
+  }
+}

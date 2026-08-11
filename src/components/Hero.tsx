@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Container from "./ui/Container";
 import Eyebrow from "./ui/Eyebrow";
 import ArrowCta from "./ui/ArrowCta";
@@ -5,6 +6,8 @@ import IndustrialFrame from "./ui/IndustrialFrame";
 import Reveal from "./ui/Reveal";
 
 export default function Hero() {
+  const t = useTranslations("hero");
+
   return (
     <section
       id="top"
@@ -18,7 +21,7 @@ export default function Hero() {
           className="block text-[11px] font-medium uppercase tracking-[0.5em] text-gray"
           style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
         >
-          Consulting — Engineering — Trade
+          {t("verticalTag")}
         </span>
       </div>
 
@@ -26,50 +29,43 @@ export default function Hero() {
         <div className="grid grid-cols-1 items-end gap-12 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-7 xl:col-span-6">
             <Reveal>
-              <Eyebrow>Engineering · Automation · Die Casting</Eyebrow>
+              <Eyebrow>{t("eyebrow")}</Eyebrow>
             </Reveal>
 
-            <h1 className="sr-only">
-              Soluzioni industriali per pressofusione, automazione e robotica
-            </h1>
+            <h1 className="sr-only">{t("seoH1")}</h1>
 
             <Reveal delay={80}>
               <p className="mt-6 max-w-2xl font-display text-[clamp(2.65rem,6.2vw,5.625rem)] font-medium leading-[1.02] tracking-[-0.02em] text-ink text-balance">
-                Soluzioni industriali.
+                {t("titleLine1")}
                 <br />
-                Dalla progettazione
+                {t("titleLine2")}
                 <br />
-                alla produzione.
+                {t("titleLine3")}
               </p>
             </Reveal>
 
             <Reveal delay={160}>
               <p className="mt-8 max-w-lg text-[15px] leading-relaxed text-gray sm:text-base">
-                AZ Consulting &amp; Trade affianca le aziende nella
-                progettazione, installazione e manutenzione di impianti
-                industriali, sistemi di automazione e soluzioni per la
-                pressofusione.
+                {t("paragraph1")}
               </p>
             </Reveal>
 
             <Reveal delay={220}>
               <p className="mt-4 max-w-lg text-[15px] leading-relaxed text-gray sm:text-base">
-                Dalla consulenza tecnica alla fornitura diretta, sviluppiamo
-                soluzioni pensate per migliorare efficienza, affidabilità e
-                produttività.
+                {t("paragraph2")}
               </p>
             </Reveal>
 
             <Reveal delay={300}>
               <div className="mt-11 flex flex-wrap items-center gap-x-8 gap-y-4">
                 <ArrowCta href="#servizi" variant="primary">
-                  Scopri i nostri servizi
+                  {t("ctaPrimary")}
                 </ArrowCta>
                 <a
                   href="#contatti"
                   className="text-sm font-medium text-ink underline decoration-gray-light decoration-1 underline-offset-[6px] transition-colors hover:decoration-accent"
                 >
-                  Parliamo del tuo progetto
+                  {t("ctaSecondary")}
                 </a>
               </div>
             </Reveal>
@@ -79,8 +75,8 @@ export default function Hero() {
             <Reveal delay={160} className="relative">
               <IndustrialFrame
                 src="/assets/images/hero-industrial.jpg"
-                alt="Impianto industriale con bracci robotici e linea automatica"
-                label="Impianto industriale · linea automatizzata"
+                alt={t("imageAlt")}
+                label={t("imageLabel")}
                 className="aspect-[4/5] w-full sm:aspect-[16/11] lg:aspect-[4/5]"
                 priority
                 sizes="(min-width: 1024px) 45vw, 100vw"
