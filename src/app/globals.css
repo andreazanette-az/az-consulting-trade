@@ -90,13 +90,19 @@ body {
 }
 
 /*
-  Safety net independent of the _iub.csConfiguration.banner.position
-  setting (see IubendaConfig): forces Iubenda's cookie banner to the
-  bottom of the viewport no matter what, since its default top/float
-  placement was rendering on top of our fixed header navigation. Inert
-  if the banner isn't present.
+  Forces Iubenda's cookie banner to the bottom of the viewport instead
+  of its default top/float placement, which rendered on top of our
+  fixed header navigation. Matches Iubenda's own documented fix
+  (https://jsfiddle.net/iSimone/74rwq24p/): `position: fixed` must be
+  re-asserted too, not just `bottom`, and this pairs with
+  `banner.slideDown: false` in _iub.csConfiguration (see IubendaConfig).
+  Inert if the banner isn't present.
 */
 #iubenda-cs-banner {
+  position: fixed !important;
   top: auto !important;
   bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 999999 !important;
 }

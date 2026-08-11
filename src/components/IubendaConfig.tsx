@@ -2,11 +2,11 @@
 
 import { useEffect } from "react";
 import { useLocale } from "next-intl";
-import { IUBENDA_BANNER_POSITION } from "@/lib/iubenda";
+import { IUBENDA_BANNER_CONFIG } from "@/lib/iubenda";
 
 type IubCsConfiguration = {
   lang?: string;
-  banner?: { position?: string; [key: string]: unknown };
+  banner?: { position?: string; slideDown?: boolean; [key: string]: unknown };
   [key: string]: unknown;
 };
 
@@ -35,7 +35,7 @@ export default function IubendaConfig() {
       lang: locale,
       banner: {
         ...iub.csConfiguration?.banner,
-        position: IUBENDA_BANNER_POSITION,
+        ...IUBENDA_BANNER_CONFIG,
       },
     };
     window._iub = iub;

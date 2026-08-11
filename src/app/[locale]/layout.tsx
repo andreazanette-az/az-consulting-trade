@@ -7,7 +7,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import IubendaConfig from "@/components/IubendaConfig";
-import { IUBENDA_BANNER_POSITION } from "@/lib/iubenda";
+import { IUBENDA_BANNER_CONFIG } from "@/lib/iubenda";
 import "../globals.css";
 
 const inter = Inter({
@@ -87,12 +87,13 @@ export default async function LocaleLayout({ children, params }: Props) {
           {/*
             Pins Iubenda's banner language to our current locale instead
             of letting it auto-detect from <html lang> (see IubendaConfig
-            for why), and forces the banner to float bottom-center instead
-            of Iubenda's default top placement, which rendered on top of
-            our fixed header navigation. Must run before the widget script
-            below — using next/script (not a raw <script> tag) so it's
-            actually guaranteed to execute: React doesn't run plain
-            <script> elements it renders itself.
+            for why), and forces the banner to the bottom instead of
+            Iubenda's default top placement, which rendered on top of our
+            fixed header navigation (paired with the CSS override in
+            globals.css — both are needed, see comment there). Must run
+            before the widget script below — using next/script (not a
+            raw <script> tag) so it's actually guaranteed to execute:
+            React doesn't run plain <script> elements it renders itself.
           */}
           <Script
             id="iubenda-config"
@@ -100,7 +101,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             dangerouslySetInnerHTML={{
               __html: `window._iub=window._iub||[];window._iub.csConfiguration={lang:${JSON.stringify(
                 locale
-              )},banner:{position:${JSON.stringify(IUBENDA_BANNER_POSITION)}}};`,
+              )},banner:${JSON.stringify(IUBENDA_BANNER_CONFIG)}};`,
             }}
           />
           <IubendaConfig />
