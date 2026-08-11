@@ -77,6 +77,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html
       lang={locale}
+      data-scroll-behavior="smooth"
       className={`${inter.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg text-ink">
@@ -89,9 +90,13 @@ export default async function LocaleLayout({ children, params }: Props) {
             for why), and forces the banner to float bottom-center instead
             of Iubenda's default top placement, which rendered on top of
             our fixed header navigation. Must run before the widget script
-            below.
+            below — using next/script (not a raw <script> tag) so it's
+            actually guaranteed to execute: React doesn't run plain
+            <script> elements it renders itself.
           */}
-          <script
+          <Script
+            id="iubenda-config"
+            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{
               __html: `window._iub=window._iub||[];window._iub.csConfiguration={lang:${JSON.stringify(
                 locale
