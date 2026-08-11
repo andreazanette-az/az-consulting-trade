@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "AZ Consulting & Trade | Engineering, Automation & Die Casting",
+    "description": "AZ Consulting & Trade provides consulting, engineering, installation and maintenance for die casting, industrial automation and robotics, alongside direct supply of industrial equipment.",
+    "ogDescription": "Technical consulting, engineering, installation, maintenance and direct supply for die casting, automation and industrial robotics.",
+    "keywords": "industrial consulting, die casting, industrial automation, industrial robotics, engineering, manufacturing plants"
+  },
+  "nav": {
+    "servizi": "Services",
+    "metodo": "Method",
+    "contatti": "Contact",
+    "cta": "Let's talk about your project",
+    "homeAriaLabel": "AZ Consulting & Trade — home",
+    "mainAriaLabel": "Main navigation",
+    "mobileAriaLabel": "Mobile navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "eyebrow": "Engineering · Automation · Die Casting",
+    "verticalTag": "Consulting — Engineering — Trade",
+    "seoH1": "Industrial solutions for die casting, automation and robotics",
+    "titleLine1": "Industrial solutions.",
+    "titleLine2": "From engineering",
+    "titleLine3": "to production.",
+    "paragraph1": "AZ Consulting & Trade supports manufacturers in the engineering, installation and maintenance of industrial plants, automation systems and die casting solutions.",
+    "paragraph2": "From technical consulting to direct supply, we develop solutions designed to improve efficiency, reliability and productivity.",
+    "ctaPrimary": "Discover our services",
+    "ctaSecondary": "Let's talk about your project",
+    "imageAlt": "Industrial plant with robotic arms and automated production line",
+    "imageLabel": "Industrial plant · automated line"
+  },
+  "intro": {
+    "kicker": "AZ Consulting & Trade",
+    "headlineLine1": "We don't just sell technology.",
+    "headlineLine2": "We build solutions that work.",
+    "body1": "Every industrial plant has specific requirements.",
+    "body2": "That's why we start by analysing the production process, identifying critical points and developing technical solutions that genuinely integrate with the customer's production.",
+    "body3": "A single point of contact for consulting, engineering, installation, maintenance and supply."
+  },
+  "services": {
+    "eyebrow": "Services",
+    "sectionTitle": "Full-scope industrial expertise",
+    "sectionSubtitle": "From initial analysis to production start-up, we support customers through the entire lifecycle of the plant.",
+    "items": [
+      {
+        "number": "01",
+        "tag": "DIE CASTING",
+        "title": "Die casting solutions",
+        "text": "We support companies in optimising die casting processes, selecting the right technologies and integrating equipment within production lines.",
+        "items": [
+          "Process analysis",
+          "Engineering and optimisation",
+          "Plant integration",
+          "Technical support",
+          "Maintenance",
+          "Supply of machinery and components"
+        ]
+      },
+      {
+        "number": "02",
+        "tag": "INDUSTRIAL AUTOMATION",
+        "title": "Automating production processes",
+        "text": "We design and integrate automation solutions built to increase productivity, precision and operational continuity.",
+        "items": [
+          "Automated lines",
+          "Material handling systems",
+          "PLC integration",
+          "Automated cells",
+          "Retrofitting",
+          "Process optimisation"
+        ]
+      },
+      {
+        "number": "03",
+        "tag": "ROBOTICS",
+        "title": "Robotics integrated into production",
+        "text": "We integrate industrial robots and automated systems into production processes, developing custom solutions based on each plant's needs.",
+        "items": [
+          "Robotic cells",
+          "Material handling",
+          "Machine tending",
+          "End-of-line automation",
+          "Robot integration",
+          "Commissioning"
+        ]
+      },
+      {
+        "number": "04",
+        "tag": "TECHNICAL CONSULTING",
+        "title": "Engineering & Industrial Consulting",
+        "text": "We support customers in the technical and strategic decisions behind their production plants. From initial analysis through to execution, we coordinate technologies, suppliers and operational activities.",
+        "items": [
+          "Engineering",
+          "Feasibility studies",
+          "Installation supervision",
+          "Project management",
+          "Maintenance",
+          "Technical assistance"
+        ]
+      }
+    ]
+  },
+  "trade": {
+    "eyebrow": "Industrial Trade",
+    "titleLine1": "The right technology.",
+    "titleLine2": "Delivered where it's needed.",
+    "body1": "Thanks to our market knowledge and an established network of partners and manufacturers, AZ Consulting & Trade can directly supply machinery, components and solutions for industry.",
+    "body2": "Our value isn't simply finding a product, but identifying the technically best-suited solution for the customer's production process.",
+    "cta": "Request a consultation",
+    "imageAlt": "Industrial machinery ready for supply",
+    "imageLabel": "Direct supply · industrial machinery"
+  },
+  "method": {
+    "eyebrow": "Method",
+    "title": "From idea to production.",
+    "steps": [
+      { "number": "01", "title": "Analysis", "text": "We analyse the process, the plant and the production goals." },
+      { "number": "02", "title": "Engineering", "text": "We define the most effective technical solution." },
+      { "number": "03", "title": "Integration", "text": "We coordinate technologies, equipment and automation." },
+      { "number": "04", "title": "Installation", "text": "We oversee installation, commissioning and start-up." },
+      { "number": "05", "title": "Support", "text": "We provide ongoing technical assistance and maintenance." }
+    ]
+  },
+  "whyAz": {
+    "titleLine1": "A technical approach.",
+    "titleLine2": "A single point of contact.",
+    "items": [
+      { "number": "01", "title": "Hands-on experience", "text": "We understand the real needs of industrial production and work with a hands-on, operational approach." },
+      { "number": "02", "title": "Tailored solutions", "text": "Every project is developed around the customer's specific technical and production requirements." },
+      { "number": "03", "title": "From consulting to supply", "text": "We can manage the entire project: analysis, engineering, supply, installation and maintenance." }
+    ]
+  },
+  "finalCta": {
+    "kicker": "Have an industrial project in mind?",
+    "title": "Let's talk about the next stage of your production.",
+    "body": "Tell us what you need. We'll work together to find the most suitable technical solution.",
+    "location": "Italy"
+  },
+  "contactForm": {
+    "heading": "Get in touch",
+    "ariaLabel": "Contact form",
+    "namePlaceholder": "Full name",
+    "emailPlaceholder": "Business email",
+    "messagePlaceholder": "Tell us about your project",
+    "honeypotLabel": "Leave this field empty",
+    "submit": "Send message",
+    "submitting": "Sending…",
+    "successTitle": "Message sent",
+    "successBody": "Thank you for contacting us. We'll get back to you as soon as possible.",
+    "errorBody": "We couldn't send your message. Please try again or email us directly.",
+    "errors": {
+      "name": "Please enter your name.",
+      "emailRequired": "Please enter an email address.",
+      "emailInvalid": "Please enter a valid email address.",
+      "message": "Tell us briefly what you need."
+    }
+  },
+  "footer": {
+    "description": "Technical consulting, engineering, automation and direct supply for industry.",
+    "linkedin": "LinkedIn",
+    "vatLabel": "VAT",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "copyright": "© {year} AZ Consulting & Trade. All rights reserved.",
+    "tagline": "Engineering · Automation · Trade",
+    "links": {
+      "diecasting": "Presses & die casting",
+      "automation": "Automation",
+      "robotics": "Robotics",
+      "consulting": "Consulting",
+      "trade": "Trade",
+      "contact": "Contact"
+    }
+  }
+}

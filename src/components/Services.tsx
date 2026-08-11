@@ -1,34 +1,44 @@
+import { useTranslations } from "next-intl";
 import Container from "./ui/Container";
 import Eyebrow from "./ui/Eyebrow";
 import Reveal from "./ui/Reveal";
 import GrowLine from "./ui/GrowLine";
 import IndustrialFrame from "./ui/IndustrialFrame";
-import { services } from "@/lib/content";
+import { serviceImages } from "@/lib/content";
+
+type ServiceItem = {
+  number: string;
+  tag: string;
+  title: string;
+  text: string;
+  items: string[];
+};
 
 export default function Services() {
+  const t = useTranslations("services");
+  const items = t.raw("items") as ServiceItem[];
+
   return (
     <section id="servizi" className="pt-10 pb-24 sm:pt-14 sm:pb-32">
       <Container>
         <div className="max-w-2xl">
           <Reveal>
-            <Eyebrow>Servizi</Eyebrow>
+            <Eyebrow>{t("eyebrow")}</Eyebrow>
           </Reveal>
           <Reveal delay={60}>
             <h2 className="mt-6 font-display text-[clamp(2rem,4vw,3.5rem)] font-medium leading-[1.08] tracking-[-0.01em] text-ink text-balance">
-              Competenze industriali a 360°
+              {t("sectionTitle")}
             </h2>
           </Reveal>
           <Reveal delay={120}>
             <p className="mt-6 text-[15px] leading-relaxed text-gray sm:text-base">
-              Dall&apos;analisi iniziale alla messa in produzione,
-              accompagniamo il cliente durante l&apos;intero ciclo di vita
-              dell&apos;impianto.
+              {t("sectionSubtitle")}
             </p>
           </Reveal>
         </div>
 
         <div className="mt-16 sm:mt-20">
-          {services.map((service, index) => (
+          {items.map((service, index) => (
             <div key={service.number}>
               <Reveal>
                 <GrowLine />
@@ -79,7 +89,7 @@ export default function Services() {
                 >
                   <Reveal delay={100}>
                     <IndustrialFrame
-                      src={service.image}
+                      src={serviceImages[index]}
                       alt={service.title}
                       label={service.tag}
                       className="aspect-[4/3] w-full"
