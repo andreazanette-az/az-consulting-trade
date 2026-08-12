@@ -1,8 +1,7 @@
-import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import Container from "./ui/Container";
 import Logo from "./ui/Logo";
-import { contact, footerLinkAnchors, iubendaPolicyId } from "@/lib/content";
+import { contact, iubendaPolicyId } from "@/lib/content";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -24,21 +23,6 @@ export default function Footer() {
               {t("description")}
             </p>
           </div>
-
-          <nav
-            className="grid grid-cols-2 gap-x-10 gap-y-3 sm:grid-cols-1"
-            aria-label="Footer"
-          >
-            {footerLinkAnchors.map((link) => (
-              <Link
-                key={link.key}
-                href={link.href}
-                className="text-sm text-white/60 transition-colors hover:text-white"
-              >
-                {t(`links.${link.key}`)}
-              </Link>
-            ))}
-          </nav>
 
           <div className="space-y-3 text-sm">
             <p>{contact.email}</p>

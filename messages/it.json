@@ -163,14 +163,6 @@
     "privacyPolicy": "Privacy Policy",
     "cookiePolicy": "Cookie Policy",
     "copyright": "© {year} AZ Consulting & Trade. Tutti i diritti riservati.",
-    "tagline": "Engineering · Automation · Trade",
-    "links": {
-      "diecasting": "Presse e pressofusione",
-      "automation": "Automazione",
-      "robotics": "Robotica",
-      "consulting": "Consulting",
-      "trade": "Trade",
-      "contact": "Contatti"
-    }
+    "tagline": "Engineering · Automation · Trade"
   }
 }
