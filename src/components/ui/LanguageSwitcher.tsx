@@ -12,7 +12,7 @@ export default function LanguageSwitcher({ tone = "ink" }: Props) {
   const locale = useLocale();
   const pathname = usePathname();
 
-  const base = tone === "white" ? "text-white/50" : "text-ink/50";
+  const base = tone === "white" ? "text-white/50" : "text-ink/65";
   const hover = tone === "white" ? "hover:text-white" : "hover:text-ink";
   const active = tone === "white" ? "text-white" : "text-ink";
 

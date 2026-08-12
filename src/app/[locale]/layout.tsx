@@ -40,6 +40,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
+  const ogImage = locale === "en" ? "/assets/og-image-en.jpg" : "/assets/og-image.jpg";
 
   return {
     metadataBase: new URL(siteUrl),
@@ -61,6 +62,13 @@ export async function generateMetadata({
       siteName: "AZ Consulting & Trade",
       locale: locale === "it" ? "it_IT" : "en_US",
       type: "website",
+      images: [{ url: ogImage, width: 1200, height: 630, alt: "AZ Consulting & Trade" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("ogDescription"),
+      images: [ogImage],
     },
   };
 }

@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="flex flex-col gap-12 border-b border-white/10 pb-12 sm:flex-row sm:justify-between">
           <div>
             <Logo tone="white" />
-            <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/40">
+            <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/55">
               {t("description")}
             </p>
           </div>
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 pt-8 text-xs text-white/30 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-4 pt-8 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
           <span>{t("copyright", { year })}</span>
 
           <div className="flex items-center gap-5">
