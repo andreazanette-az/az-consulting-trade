@@ -77,7 +77,8 @@ export default function Hero() {
                 src="/assets/images/hero-industrial.jpg"
                 alt={t("imageAlt")}
                 label={t("imageLabel")}
-                className="aspect-[4/5] w-full sm:aspect-[16/11] lg:aspect-[4/5]"
+                className="aspect-[3/2] w-full"
+                fit="contain"
                 priority
                 sizes="(min-width: 1024px) 45vw, 100vw"
               />

@@ -11,6 +11,7 @@ type IndustrialFrameProps = {
   imgClassName?: string;
   priority?: boolean;
   sizes?: string;
+  fit?: "cover" | "contain";
 };
 
 /**
@@ -26,6 +27,7 @@ export default function IndustrialFrame({
   imgClassName = "",
   priority = false,
   sizes = "100vw",
+  fit = "cover",
 }: IndustrialFrameProps) {
   const [failed, setFailed] = useState(false);
 
@@ -38,7 +40,7 @@ export default function IndustrialFrame({
           fill
           sizes={sizes}
           priority={priority}
-          className={`object-cover ${imgClassName}`}
+          className={`${fit === "contain" ? "object-contain" : "object-cover"} ${imgClassName}`}
           onError={() => setFailed(true)}
         />
       )}
