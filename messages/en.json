@@ -163,14 +163,6 @@
     "privacyPolicy": "Privacy Policy",
     "cookiePolicy": "Cookie Policy",
     "copyright": "© {year} AZ Consulting & Trade. All rights reserved.",
-    "tagline": "Engineering · Automation · Trade",
-    "links": {
-      "diecasting": "Presses & die casting",
-      "automation": "Automation",
-      "robotics": "Robotics",
-      "consulting": "Consulting",
-      "trade": "Trade",
-      "contact": "Contact"
-    }
+    "tagline": "Engineering · Automation · Trade"
   }
 }
