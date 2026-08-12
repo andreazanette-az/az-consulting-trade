@@ -5,6 +5,12 @@
     "ogDescription": "Consulenza tecnica, progettazione, installazione, manutenzione e fornitura diretta per pressofusione, automazione e robotica industriale.",
     "keywords": "consulenza industriale, pressofusione, automazione industriale, robotica industriale, engineering, die casting, impianti industriali"
   },
+  "notFound": {
+    "eyebrow": "Errore 404",
+    "title": "Pagina non trovata.",
+    "body": "La pagina che cerchi non esiste o è stata spostata.",
+    "cta": "Torna alla home"
+  },
   "nav": {
     "servizi": "Servizi",
     "metodo": "Metodo",

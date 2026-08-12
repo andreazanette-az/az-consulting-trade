@@ -5,6 +5,12 @@
     "ogDescription": "Technical consulting, engineering, installation, maintenance and direct supply for die casting, automation and industrial robotics.",
     "keywords": "industrial consulting, die casting, industrial automation, industrial robotics, engineering, manufacturing plants"
   },
+  "notFound": {
+    "eyebrow": "404 error",
+    "title": "Page not found.",
+    "body": "The page you're looking for doesn't exist or has been moved.",
+    "cta": "Back to homepage"
+  },
   "nav": {
     "servizi": "Services",
     "metodo": "Method",

@@ -20,7 +20,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const initialFields: Fields = { name: "", email: "", message: "", _gotcha: "" };
 
 const fieldClass =
-  "w-full border-b border-white/20 bg-transparent py-3 text-sm text-white placeholder:text-white/35 outline-none transition-colors focus:border-accent";
+  "w-full border-b border-white/20 bg-transparent py-3 text-sm text-white placeholder:text-white/50 outline-none transition-colors focus:border-accent";
 
 export default function ContactForm() {
   const t = useTranslations("contactForm");
