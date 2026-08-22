@@ -95,13 +95,13 @@ export default async function LocaleLayout({ children, params }: Props) {
           {/*
             Pins Iubenda's banner language to our current locale instead
             of letting it auto-detect from <html lang> (see IubendaConfig
-            for why), and renders the banner as a bottom-center floating
-            box instead of Iubenda's default top placement, which
-            rendered on top of our fixed header navigation (see
-            IUBENDA_BANNER_CONFIG). Must run before the widget script
-            below — using next/script (not a raw <script> tag) so it's
-            actually guaranteed to execute: React doesn't run plain
-            <script> elements it renders itself.
+            for why), and forces the banner to the bottom instead of
+            Iubenda's default top placement, which rendered on top of our
+            fixed header navigation (paired with the CSS override in
+            globals.css — both are needed, see comment there). Must run
+            before the widget script below — using next/script (not a
+            raw <script> tag) so it's actually guaranteed to execute:
+            React doesn't run plain <script> elements it renders itself.
           */}
           <Script
             id="iubenda-config"

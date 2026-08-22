@@ -1,6 +1,9 @@
-// Renders the banner as a compact floating box docked bottom-center,
-// instead of a full-width bar. Being bottom-anchored, it doesn't overlap
-// our fixed header navigation (unlike Iubenda's default top placement).
+// Forces the banner to the bottom of the viewport instead of Iubenda's
+// default top/float placement, which was rendering on top of our fixed
+// header navigation. `slideDown: false` is required alongside the CSS
+// override in globals.css for the bottom position to actually apply —
+// per Iubenda's own documented fix: https://jsfiddle.net/iSimone/74rwq24p/
 export const IUBENDA_BANNER_CONFIG = {
-  position: "float-bottom-center",
+  position: "bottom",
+  slideDown: false,
 } as const;
