@@ -90,6 +90,32 @@ body {
 }
 
 /*
+  Iubenda renders the cookie banner as a `position: fixed`, full-viewport
+  (height: 100%) overlay by default, via a <style> tag it injects at
+  runtime with `#iubenda-cs-banner { ... !important }` rules — same
+  selector and importance as any override here, so the tie is normally
+  broken by load order (theirs loads after ours and wins). The
+  `html body` prefix below raises our selector's specificity above
+  theirs to win regardless of load order. Per explicit request, this
+  site instead wants the banner in normal document flow — visible only
+  once the visitor scrolls to the end of the page. Iubenda always
+  appends #iubenda-cs-banner as the last child of <body> (after our
+  footer), so forcing it static places it right there. Note: this is a
+  deliberate compliance trade-off — most cookie-consent guidance expects
+  the banner to be immediately visible, not reachable only after
+  scrolling.
+*/
+html body #iubenda-cs-banner {
+  position: static !important;
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  height: auto !important;
+  width: 100% !important;
+}
+
+/*
   Iubenda's separate "returning visitor" preferences widget
   (.iub__us-widget — shown once consent was already recorded, distinct
   from #iubenda-cs-banner above). It doesn't reliably self-position:
