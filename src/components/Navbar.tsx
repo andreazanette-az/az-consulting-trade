@@ -38,7 +38,7 @@ export default function Navbar() {
       >
         <Container className="flex items-center justify-between py-4 sm:py-5">
           <Link href="#top" aria-label={t("homeAriaLabel")}>
-            <Logo priority />
+            <Logo priority tone="white" />
           </Link>
 
           <nav className="hidden items-center gap-9 lg:flex" aria-label={t("mainAriaLabel")}>
@@ -46,7 +46,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[13px] font-medium uppercase tracking-[0.14em] text-ink/80 transition-colors duration-300 hover:text-ink"
+                className="relative pb-1 text-[13px] font-medium uppercase tracking-[0.14em] text-ink/80 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-accent after:transition-all after:duration-300 hover:text-ink hover:after:w-full"
               >
                 {t(link.key)}
               </Link>
@@ -57,7 +57,7 @@ export default function Navbar() {
             <LanguageSwitcher />
             <Link
               href="#contatti"
-              className="inline-flex items-center gap-2 border border-ink/20 px-5 py-2.5 text-[13px] font-medium uppercase tracking-[0.1em] text-ink transition-colors duration-300 hover:border-ink hover:bg-ink hover:text-bg"
+              className="inline-flex items-center gap-2 border border-ink/20 px-5 py-2.5 text-[13px] font-medium uppercase tracking-[0.1em] text-ink transition-colors duration-300 hover:border-accent hover:bg-accent hover:text-black"
             >
               {t("cta")}
             </Link>

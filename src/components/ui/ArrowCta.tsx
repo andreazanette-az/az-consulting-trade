@@ -10,9 +10,9 @@ type ArrowCtaProps = {
 
 const variantClasses: Record<NonNullable<ArrowCtaProps["variant"]>, string> = {
   primary:
-    "bg-ink text-bg hover:bg-black",
+    "bg-ink text-bg hover:bg-accent hover:text-black",
   ghost:
-    "bg-transparent text-ink border border-ink/20 hover:border-ink/60",
+    "bg-transparent text-ink border border-ink/20 hover:border-accent hover:text-accent",
   onDark:
     "bg-white text-black hover:bg-accent",
 };
