@@ -4,6 +4,7 @@ import Eyebrow from "./ui/Eyebrow";
 import Reveal from "./ui/Reveal";
 import GrowLine from "./ui/GrowLine";
 import IndustrialFrame from "./ui/IndustrialFrame";
+import BlueprintDecoration from "./ui/BlueprintDecoration";
 import { serviceImages } from "@/lib/content";
 
 type ServiceItem = {
@@ -13,6 +14,9 @@ type ServiceItem = {
   text: string;
   items: string[];
 };
+
+// One blueprint per service, matched to its topic (pressofusione, automazione, robotica, consulenza tecnica).
+const serviceBlueprints = ["press", "assembly-line", "robotic-arm", "technical-drawing"] as const;
 
 export default function Services() {
   const t = useTranslations("services");
@@ -44,7 +48,15 @@ export default function Services() {
                 <GrowLine />
               </Reveal>
 
-              <div className="grid grid-cols-1 gap-8 py-14 lg:grid-cols-12 lg:gap-10 sm:py-16">
+              <div className="relative grid grid-cols-1 gap-8 overflow-hidden py-14 lg:grid-cols-12 lg:gap-10 sm:py-16">
+                <BlueprintDecoration
+                  image={serviceBlueprints[index]}
+                  position={index % 2 === 0 ? "left" : "right"}
+                  width={440}
+                  opacity={0.15}
+                  mask="edge"
+                  top="50%"
+                />
                 <div className="lg:col-span-2">
                   <Reveal>
                     <span className="font-display text-4xl font-medium text-gray-light sm:text-5xl">

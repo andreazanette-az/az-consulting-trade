@@ -107,16 +107,6 @@
       }
     ]
   },
-  "trade": {
-    "eyebrow": "Industrial Trade",
-    "titleLine1": "La tecnologia giusta.",
-    "titleLine2": "Direttamente dove serve.",
-    "body1": "Grazie alla conoscenza del mercato e a una rete consolidata di partner e produttori, AZ Consulting & Trade può fornire direttamente macchinari, componenti e soluzioni destinate all'industria.",
-    "body2": "Il nostro valore non è semplicemente trovare un prodotto, ma individuare la soluzione tecnicamente più adatta al processo produttivo del cliente.",
-    "cta": "Richiedi una consulenza",
-    "imageAlt": "Macchinario industriale pronto per la fornitura",
-    "imageLabel": "Fornitura diretta · macchinari industriali"
-  },
   "method": {
     "eyebrow": "Metodo",
     "title": "Dall'idea alla produzione.",

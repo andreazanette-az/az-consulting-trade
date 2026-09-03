@@ -3,6 +3,7 @@ import Container from "./ui/Container";
 import Eyebrow from "./ui/Eyebrow";
 import Reveal from "./ui/Reveal";
 import GrowLine from "./ui/GrowLine";
+import BlueprintDecoration from "./ui/BlueprintDecoration";
 
 type MethodStep = { number: string; title: string; text: string };
 
@@ -11,7 +12,14 @@ export default function Method() {
   const steps = t.raw("steps") as MethodStep[];
 
   return (
-    <section id="metodo" className="py-24 sm:py-32">
+    <section id="metodo" className="relative overflow-hidden py-24 sm:py-32">
+      <BlueprintDecoration
+        image="assembly-line"
+        position="right"
+        width={740}
+        opacity={0.17}
+        top="48%"
+      />
       <Container>
         <div className="max-w-2xl">
           <Reveal>
