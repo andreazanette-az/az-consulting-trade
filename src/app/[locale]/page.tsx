@@ -6,7 +6,6 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import Services from "@/components/Services";
-import Trade from "@/components/Trade";
 import Method from "@/components/Method";
 import WhyAZ from "@/components/WhyAZ";
 import FinalCTA from "@/components/FinalCTA";
@@ -32,7 +31,6 @@ export default async function Home({ params }: Props) {
         <Hero />
         <Intro />
         <Services />
-        <Trade />
         <Method />
         <WhyAZ />
         <FinalCTA />

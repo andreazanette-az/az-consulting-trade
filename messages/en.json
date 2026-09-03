@@ -107,16 +107,6 @@
       }
     ]
   },
-  "trade": {
-    "eyebrow": "Industrial Trade",
-    "titleLine1": "The right technology.",
-    "titleLine2": "Delivered where it's needed.",
-    "body1": "Thanks to our market knowledge and an established network of partners and manufacturers, AZ Consulting & Trade can directly supply machinery, components and solutions for industry.",
-    "body2": "Our value isn't simply finding a product, but identifying the technically best-suited solution for the customer's production process.",
-    "cta": "Request a consultation",
-    "imageAlt": "Industrial machinery ready for supply",
-    "imageLabel": "Direct supply · industrial machinery"
-  },
   "method": {
     "eyebrow": "Method",
     "title": "From idea to production.",

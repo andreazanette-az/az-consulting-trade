@@ -2,13 +2,22 @@ import { useTranslations } from "next-intl";
 import Container from "./ui/Container";
 import Reveal from "./ui/Reveal";
 import ContactForm from "./ContactForm";
+import BlueprintDecoration from "./ui/BlueprintDecoration";
 import { contact } from "@/lib/content";
 
 export default function FinalCTA() {
   const t = useTranslations("finalCta");
 
   return (
-    <section id="contatti" className="bg-black py-24 text-white sm:py-32">
+    <section id="contatti" className="relative overflow-hidden bg-black py-24 text-white sm:py-32">
+      <BlueprintDecoration
+        image="technical-drawing"
+        position="left"
+        width={560}
+        opacity={0.14}
+        mask="edge"
+        top="50%"
+      />
       <Container>
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-7">

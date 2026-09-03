@@ -2,12 +2,21 @@ import { useTranslations } from "next-intl";
 import Container from "./ui/Container";
 import Reveal from "./ui/Reveal";
 import GrowLine from "./ui/GrowLine";
+import BlueprintDecoration from "./ui/BlueprintDecoration";
 
 export default function Intro() {
   const t = useTranslations("intro");
 
   return (
-    <section className="pt-24 pb-10 sm:pt-32 sm:pb-14">
+    <section className="relative overflow-hidden pt-24 pb-10 sm:pt-32 sm:pb-14">
+      <BlueprintDecoration
+        image="technical-drawing"
+        position="left"
+        width={680}
+        opacity={0.16}
+        rotation={2}
+        top="58%"
+      />
       <Container>
         <Reveal>
           <GrowLine className="mb-14" />

@@ -32,7 +32,9 @@ export default function IndustrialFrame({
   const [failed, setFailed] = useState(false);
 
   return (
-    <div className={`relative overflow-hidden bg-gray-light ${className}`}>
+    <div
+      className={`group relative overflow-hidden bg-gray-light ring-1 ring-inset ring-white/10 ${className}`}
+    >
       {!failed && (
         <Image
           src={src}
@@ -40,12 +42,12 @@ export default function IndustrialFrame({
           fill
           sizes={sizes}
           priority={priority}
-          className={`${fit === "contain" ? "object-contain" : "object-cover"} ${imgClassName}`}
+          className={`${fit === "contain" ? "object-contain" : "object-cover"} transition-transform duration-700 ease-out group-hover:scale-[1.04] ${imgClassName}`}
           onError={() => setFailed(true)}
         />
       )}
       {failed && (
-        <div className="absolute inset-0 flex flex-col justify-between bg-[#e9e9e6] p-5">
+        <div className="absolute inset-0 flex flex-col justify-between bg-bg-soft p-5">
           <svg
             className="absolute inset-0 h-full w-full opacity-[0.35]"
             preserveAspectRatio="none"
@@ -61,13 +63,13 @@ export default function IndustrialFrame({
                 <path
                   d="M32 0H0V32"
                   fill="none"
-                  stroke="#c6c6c1"
+                  stroke="#2f3036"
                   strokeWidth="1"
                 />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill={`url(#grid-${src})`} />
-            <line x1="0" y1="0" x2="100%" y2="100%" stroke="#c6c6c1" strokeWidth="1" />
+            <line x1="0" y1="0" x2="100%" y2="100%" stroke="#2f3036" strokeWidth="1" />
           </svg>
           <span className="relative text-[10px] font-medium uppercase tracking-[0.2em] text-gray">
             AZ · CT

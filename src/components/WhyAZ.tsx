@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import Container from "./ui/Container";
 import Reveal from "./ui/Reveal";
 import GrowLine from "./ui/GrowLine";
+import BlueprintDecoration from "./ui/BlueprintDecoration";
 
 type WhyAzItem = { number: string; title: string; text: string };
 
@@ -10,7 +11,15 @@ export default function WhyAZ() {
   const items = t.raw("items") as WhyAzItem[];
 
   return (
-    <section className="py-24 sm:py-32">
+    <section className="relative overflow-hidden py-24 sm:py-32">
+      <BlueprintDecoration
+        image="robotic-arm"
+        position="right"
+        width={800}
+        opacity={0.17}
+        rotation={-5}
+        top="42%"
+      />
       <Container>
         <Reveal>
           <h2 className="max-w-3xl font-display text-[clamp(2rem,4vw,3.5rem)] font-medium leading-[1.08] tracking-[-0.01em] text-ink text-balance">
