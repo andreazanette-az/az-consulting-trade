@@ -8,7 +8,7 @@ export const navAnchors = [
 ] as const;
 
 export const serviceImages = [
-  "/assets/images/service-diecasting.jpg",
+  "/assets/images/service-packaging.jpg",
   "/assets/images/service-automation.jpg",
   "/assets/images/service-robotics.jpg",
   "/assets/images/service-consulting.jpg",
