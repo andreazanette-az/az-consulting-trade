@@ -51,15 +51,15 @@
     "items": [
       {
         "number": "01",
-        "tag": "PRESSOFUSIONE",
-        "title": "Soluzioni per la pressofusione",
-        "text": "Supportiamo le aziende nell'ottimizzazione dei processi di pressofusione, nella scelta delle tecnologie e nell'integrazione degli impianti all'interno delle linee produttive.",
+        "tag": "PACKAGING E MOVIMENTAZIONE",
+        "title": "Soluzioni per packaging e movimentazione",
+        "text": "Affianchiamo le aziende nella progettazione e ottimizzazione dei sistemi di imballaggio e movimentazione interna, migliorando flussi produttivi, sicurezza e integrazione con le linee esistenti.",
         "items": [
-          "Analisi del processo",
-          "Progettazione e ottimizzazione",
-          "Integrazione impianti",
-          "Supporto tecnico",
-          "Manutenzione",
+          "Analisi dei flussi logistici",
+          "Progettazione linee di packaging",
+          "Sistemi di movimentazione automatizzata",
+          "Integrazione con impianti esistenti",
+          "Supporto tecnico e manutenzione",
           "Fornitura di macchinari e componenti"
         ]
       },

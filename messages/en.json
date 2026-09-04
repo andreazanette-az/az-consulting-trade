@@ -51,15 +51,15 @@
     "items": [
       {
         "number": "01",
-        "tag": "DIE CASTING",
-        "title": "Die casting solutions",
-        "text": "We support companies in optimising die casting processes, selecting the right technologies and integrating equipment within production lines.",
+        "tag": "PACKAGING & MATERIAL HANDLING",
+        "title": "Packaging and material handling solutions",
+        "text": "We support companies in designing and optimising packaging and internal material handling systems, improving production flow, safety and integration with existing lines.",
         "items": [
-          "Process analysis",
-          "Engineering and optimisation",
-          "Plant integration",
-          "Technical support",
-          "Maintenance",
+          "Logistics flow analysis",
+          "Packaging line design",
+          "Automated material handling systems",
+          "Integration with existing plants",
+          "Technical support and maintenance",
           "Supply of machinery and components"
         ]
       },

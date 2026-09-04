@@ -26,6 +26,11 @@ const ASSETS = {
     width: 682,
     height: 920,
   },
+  packaging: {
+    src: "/assets/images/blueprints/packaging.png",
+    width: 700,
+    height: 944,
+  },
 } as const;
 
 type BlueprintDecorationProps = {

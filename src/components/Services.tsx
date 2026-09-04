@@ -16,7 +16,7 @@ type ServiceItem = {
 };
 
 // One blueprint per service, matched to its topic (pressofusione, automazione, robotica, consulenza tecnica).
-const serviceBlueprints = ["press", "assembly-line", "robotic-arm", "technical-drawing"] as const;
+const serviceBlueprints = ["packaging", "assembly-line", "robotic-arm", "technical-drawing"] as const;
 
 export default function Services() {
   const t = useTranslations("services");
