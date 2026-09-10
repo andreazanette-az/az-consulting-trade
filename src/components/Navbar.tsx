@@ -38,7 +38,13 @@ export default function Navbar() {
       >
         <Container className="flex items-center justify-between py-4 sm:py-5">
           <Link href="#top" aria-label={t("homeAriaLabel")}>
-            <Logo priority tone="white" />
+            <Logo
+              priority
+              tone="white"
+              markClassName="h-7 w-auto sm:h-9 xl:h-12"
+              textClassName="text-[14px] sm:text-[16px] xl:text-[19px]"
+              className="gap-2 sm:gap-3"
+            />
           </Link>
 
           <nav className="hidden items-center gap-9 lg:flex" aria-label={t("mainAriaLabel")}>
