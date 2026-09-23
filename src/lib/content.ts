@@ -16,7 +16,7 @@ export const serviceImages = [
 
 export const contact = {
   email: "andrea@azconsultingtrade.it",
-  phone: "+39 392 135 7797",
+  phone: "+39 349 934 469",
   vat: "IT05567410260",
   linkedin:
     "https://www.linkedin.com/company/az-consulting-trade/about/?viewAsMember=true",
