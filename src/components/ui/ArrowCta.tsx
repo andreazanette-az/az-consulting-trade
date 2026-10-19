@@ -6,6 +6,7 @@ type ArrowCtaProps = {
   children: ReactNode;
   variant?: "primary" | "ghost" | "onDark";
   className?: string;
+  external?: boolean;
 };
 
 const variantClasses: Record<NonNullable<ArrowCtaProps["variant"]>, string> = {
@@ -22,10 +23,12 @@ export default function ArrowCta({
   children,
   variant = "primary",
   className = "",
+  external = false,
 }: ArrowCtaProps) {
   return (
     <Link
       href={href}
+      {...(external && { target: "_blank", rel: "noopener noreferrer" })}
       className={`group inline-flex items-center gap-2.5 px-6 py-3.5 text-sm font-medium tracking-wide transition-colors duration-300 ${variantClasses[variant]} ${className}`}
     >
       <span>{children}</span>

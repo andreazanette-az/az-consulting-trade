@@ -14,6 +14,7 @@
   "nav": {
     "servizi": "Services",
     "metodo": "Method",
+    "collaborazioni": "Partners",
     "contatti": "Contact",
     "cta": "Let's talk about your project",
     "homeAriaLabel": "AZ Consulting & Trade — home",
@@ -126,6 +127,25 @@
       { "number": "02", "title": "Tailored solutions", "text": "Every project is developed around the customer's specific technical and production requirements." },
       { "number": "03", "title": "From consulting to supply", "text": "We can manage the entire project: analysis, engineering, supply, installation and maintenance." }
     ]
+  },
+  "partners": {
+    "eyebrow": "Partnerships",
+    "title": "Selected partners.",
+    "visitSite": "Visit the website",
+    "items": {
+      "artEco": {
+        "name": "Art-Eco",
+        "tag": "Sustainable climate control",
+        "description": "Art-Eco designs and builds sustainable climate-control systems for industrial, professional and commercial spaces: radiant heating, evaporative cooling, ventilation and dehumidification.",
+        "relation": "Together with Art-Eco, AZ Consulting & Trade extends its offering with climate-control solutions for our clients' production environments.",
+        "imageAlts": [
+          "Radiant heaters installed in an industrial building",
+          "Evaporative cooler installed on the roof of an industrial building",
+          "Portable evaporative cooler in a warehouse",
+          "Radiant heaters in a commercial venue"
+        ]
+      }
+    }
   },
   "finalCta": {
     "kicker": "Have an industrial project in mind?",
