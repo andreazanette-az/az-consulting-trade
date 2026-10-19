@@ -8,6 +8,7 @@ import Intro from "@/components/Intro";
 import Services from "@/components/Services";
 import Method from "@/components/Method";
 import WhyAZ from "@/components/WhyAZ";
+import Partners from "@/components/Partners";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
@@ -33,6 +34,7 @@ export default async function Home({ params }: Props) {
         <Services />
         <Method />
         <WhyAZ />
+        <Partners />
         <FinalCTA />
       </main>
       <Footer />

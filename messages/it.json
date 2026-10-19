@@ -14,6 +14,7 @@
   "nav": {
     "servizi": "Servizi",
     "metodo": "Metodo",
+    "collaborazioni": "Collaborazioni",
     "contatti": "Contatti",
     "cta": "Parliamo del tuo progetto",
     "homeAriaLabel": "AZ Consulting & Trade — home",
@@ -126,6 +127,25 @@
       { "number": "02", "title": "Soluzioni su misura", "text": "Ogni progetto viene sviluppato sulle specifiche esigenze tecniche e produttive del cliente." },
       { "number": "03", "title": "Dalla consulenza alla fornitura", "text": "Possiamo seguire l'intero progetto: analisi, progettazione, fornitura, installazione e manutenzione." }
     ]
+  },
+  "partners": {
+    "eyebrow": "Collaborazioni",
+    "title": "Partner selezionati.",
+    "visitSite": "Visita il sito",
+    "items": {
+      "artEco": {
+        "name": "Art-Eco",
+        "tag": "Climatizzazione sostenibile",
+        "description": "Art-Eco progetta e realizza sistemi di climatizzazione sostenibile per ambienti industriali, professionali e commerciali: riscaldamento a irraggiamento, raffrescamento evaporativo, ventilazione e deumidificazione.",
+        "relation": "Con Art-Eco completiamo l'offerta di AZ Consulting & Trade con soluzioni di climatizzazione per gli ambienti produttivi dei nostri clienti.",
+        "imageAlts": [
+          "Riscaldatori a irraggiamento installati in un capannone industriale",
+          "Raffrescatore evaporativo installato sul tetto di un edificio industriale",
+          "Raffrescatore evaporativo mobile in un capannone",
+          "Riscaldatori a irraggiamento in un locale commerciale"
+        ]
+      }
+    }
   },
   "finalCta": {
     "kicker": "Hai un progetto industriale?",

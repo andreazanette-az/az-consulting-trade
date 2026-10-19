@@ -36,7 +36,7 @@ export default function Navbar() {
             : "border-b border-transparent bg-transparent"
         }`}
       >
-        <Container className="flex items-center justify-between py-4 sm:py-5">
+        <Container className="flex items-center justify-between gap-10 py-4 sm:py-5">
           <Link href="#top" aria-label={t("homeAriaLabel")}>
             <Logo
               priority
@@ -47,7 +47,7 @@ export default function Navbar() {
             />
           </Link>
 
-          <nav className="hidden items-center gap-9 lg:flex" aria-label={t("mainAriaLabel")}>
+          <nav className="hidden items-center gap-7 min-[1360px]:flex" aria-label={t("mainAriaLabel")}>
             {navAnchors.map((link) => (
               <Link
                 key={link.href}
@@ -59,7 +59,7 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="hidden items-center gap-6 lg:flex">
+          <div className="hidden items-center gap-6 min-[1360px]:flex">
             <LanguageSwitcher />
             <Link
               href="#contatti"
@@ -74,7 +74,7 @@ export default function Navbar() {
             onClick={() => setMenuOpen((v) => !v)}
             aria-expanded={menuOpen}
             aria-label={menuOpen ? t("closeMenu") : t("openMenu")}
-            className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-[6px] lg:hidden"
+            className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-[6px] min-[1360px]:hidden"
           >
             <span
               className={`h-px w-6 bg-ink transition-transform duration-300 ${
@@ -100,7 +100,7 @@ export default function Navbar() {
         sibling means it always measures against the real viewport.
       */}
       <div
-        className={`fixed inset-0 z-40 flex flex-col justify-between bg-bg px-6 pb-10 pt-28 transition-transform duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] lg:hidden ${
+        className={`fixed inset-0 z-40 flex flex-col justify-between bg-bg px-6 pb-10 pt-28 transition-transform duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] min-[1360px]:hidden ${
           menuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
